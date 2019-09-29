@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleJinja2DotNet", "SimpleJinja2DotNet\SimpleJinja2DotNet.csproj", "{714E81C0-979D-47FC-AD3D-F7B16CB5FB26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleJinja2DotNet.Tests", "SimpleJinja2DotNet.Tests\SimpleJinja2DotNet.Tests.csproj", "{2A455B42-FD51-4623-BBC8-189D8DF2BEC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5FF7FCA-0BC0-4B65-B5E6-0B70E4BE4617}"
+	ProjectSection(SolutionItems) = preProject
+		Syntax.txt = Syntax.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{714E81C0-979D-47FC-AD3D-F7B16CB5FB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714E81C0-979D-47FC-AD3D-F7B16CB5FB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714E81C0-979D-47FC-AD3D-F7B16CB5FB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714E81C0-979D-47FC-AD3D-F7B16CB5FB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A455B42-FD51-4623-BBC8-189D8DF2BEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A455B42-FD51-4623-BBC8-189D8DF2BEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A455B42-FD51-4623-BBC8-189D8DF2BEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A455B42-FD51-4623-BBC8-189D8DF2BEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB11BA62-02E1-425E-BBF7-8B261D77A4AC}
+	EndGlobalSection
+EndGlobal

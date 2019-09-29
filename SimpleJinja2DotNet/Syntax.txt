@@ -1,0 +1,87 @@
+<if-statement>
+	: 'if' <expression>
+
+<elif-statement>
+	: 'elif' <expression>
+
+<else-statement>
+	: 'else'
+
+<endif-statement>
+	: 'endif'
+
+<for-statement>
+	: 'for' <symbol> 'in' <atom-expression>
+
+<endfor-statement>
+	: 'endfor'
+
+<expression-statement>
+	: <expression>
+
+#-------------
+
+<expression>
+	: <filter>
+
+<filter>
+	: <test> ('|' <filter-call>)*
+
+<filter-call>
+	: <symbol> [<argument-list>]
+
+<argument-list>
+	: '(' [<test> (',' <test>)*] ')'
+
+<test>
+	: <or-test>
+
+<or-test>
+	: <and-test> ('or' <and-test>)*
+
+<and-test>
+	: <not-test> ('and' <not-test>)*
+
+<not-test>
+	: 'not' <not-test>
+	: <compare>
+
+<compare>
+	: <math> [<compare-operator> <math>]
+
+<math>
+	: <term> (('+' | '-') <term>)*
+
+<term>
+	: <factor> (('*' | '/' | '//' | '%') <factor>)*
+
+<factor>
+	: <atom-expression>
+	: ('+' | '-') <atom-expression>
+
+<atom-expression>
+	: <atom> (('[' <expression> ']') | ('.' <symbol>))*
+
+<atom>
+	: <parenthesis-expression>
+	: <symbol>
+	: <number>
+	: <string>
+	: <bool>
+
+<parenthesis-expression>
+	: '(' <expression> ')'
+
+<compare-operator>
+	: '<' : '>' : '==' : '>=' : '<=' : '!='
+
+<symbol>
+	: [_\w]+[_\w\d]*
+
+<number>
+	: \d* [\.] \d+
+
+<bool>
+	: 'True' : 'False'
+
+

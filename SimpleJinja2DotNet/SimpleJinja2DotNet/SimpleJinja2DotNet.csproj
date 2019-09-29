@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>Anders Liu</Authors>
+    <Company>Anders Liu</Company>
+    <Description>A simple .net core implementation of [Jinja2](https://pypi.org/project/Jinja2/) template engine.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/anders-liu/SimpleJinja2DotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/anders-liu/SimpleJinja2DotNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>jinja, jinja2</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
